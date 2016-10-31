@@ -34,13 +34,12 @@ a:focus{
 /* main :: carousel
 			 -------------------------------------------------- */
 .carousel {
-	height: 500px;
-	margin-bottom: 60px;
+	height: 460px;
 }
 
 .carousel-inner>.item>img {
 	min-width: 100%;
-	height: 500px;
+	height: 460px;
 }
 
 .carousel-inner .carousel-caption {
@@ -81,6 +80,7 @@ a:focus{
 	padding-right: 15px; 
 	margin-bottom:0;
 }
+
 
 /** modal :: login
 			-------------------------------------------------- */
@@ -300,7 +300,11 @@ a:focus{
 	color:#4db8bd;
 	font-weight:600;
 }
-
+.result_more {
+	padding:20px 0;
+	font-weight:bold;
+	font-size:1.2em;
+}
 
 .pagination>li>a {
 	color:#4db8bd;
