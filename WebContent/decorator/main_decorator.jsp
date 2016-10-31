@@ -35,9 +35,10 @@
 <![endif]-->
 
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/searchGroup.css" />
 <style type="text/css">
 	/** 메뉴바 배경색 */
-.searchGroup .navbar-wrapper {
+.non_background .navbar-wrapper {
 	background-color:#4db8bd;
 }
 </style>
@@ -94,11 +95,15 @@
 		      </div>
 		      <div class="modal-body text-center">
 		        <form id="login_form" action="" name="login_form" method="post">
-							<div class="form-group"><input type="text" placeholder="Email" class="form-control"></div>
+							<div class="form-group"><input type="text" placeholder="ID" class="form-control"></div>
 							<div class="form-group"><input type="password" placeholder="Password" class="form-control"></div>
 							<div class="row modal_login_btns">
 								<button type="submit" class="col-sm-6 btn btn-default">Login</button>
 								<button type="button" class="col-sm-6 btn btn-info">Join</button>
+							</div>
+							<div class="row modal_login_btns">
+								<button type="button" class="col-sm-6 btn btn-default">ID찾기</button>
+								<button type="button" class="col-sm-6 btn btn-default">Password찾기</button>
 							</div>
 						</form>
 		      </div>
@@ -129,7 +134,8 @@
 						<li><a href="">고객지원</a></li>
 						<li><a href="">이용안내</a></li>
 						<li><a href="">개인정보 취급방침</a></li>
-						<li><a href="">탈퇴하기</a></li>
+						<!-- Trigger the modal with a button -->
+						<li><a href="#" data-toggle="modal" data-target="#leave_modal">탈퇴하기</a></li>
 					</ul>
 					<br />
 					<address>
@@ -140,6 +146,39 @@
 				
 			</div>
 		</div>
+		
+		<!-- Modal -->
+		<div id="leave_modal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">탈퇴하기</h4>
+		      </div>
+		      <div class="modal-body text-center">
+		        <form id="leave_form" action="" name="leave_form" method="post">
+							<div class="form-group"><input type="password" placeholder="Password" class="form-control"></div>
+							<div class="form-group"><input type="password" placeholder="Password 확인" class="form-control"></div>
+							
+							<p class="row">탈퇴하시면 고객님의 모든 정보가 삭제됩니다.<br />탈퇴하시겠습니까?</p>
+							
+							<div class="row modal_leave_btns">
+								<button type="button" class="col-sm-6 btn btn-warning">취소</button>
+								<button type="submit" class="col-sm-6 btn btn-danger">확인</button>
+							</div>
+						</form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		
+		  </div>
+		</div>
+		<!-- //Modal -->
+		
 	</footer>
 	<!--// 푸터 -->
 

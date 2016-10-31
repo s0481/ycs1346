@@ -33,6 +33,7 @@
 <![endif]-->
 
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/searchGroup.css" />
 <style type="text/css">
 	
 </style>

@@ -33,13 +33,14 @@
 <![endif]-->
 
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/searchGroup.css" />
 <style type="text/css">
 	
 </style>
 
 </head>
 
-<body class="searchGroup">
+<body class="non_background">
 
 	<!-- searchGroup 내용영역 -->
 	<div class="container" style="margin-top: 80px;">
@@ -92,6 +93,34 @@
 									<span class="col-sm-2 big_category_detail"><strong>기   타</strong></span>
 									<div class="col-sm-10">
 										<label class="checkbox-inline"><input type="checkbox" value="">기타</label>
+									</div>
+								</li>
+								
+								<li class="row list-group-item">
+									<span class="col-sm-2 big_category_detail"><strong>인원수</strong></span>
+									<div class="col-sm-10">
+										<label class="checkbox-inline"><input type="checkbox" value="">3명</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">4명</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">5명</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">6명 이상</label>
+									</div>
+								</li>
+								<li class="row list-group-item">
+									<span class="col-sm-2 big_category_detail"><strong>모임횟수</strong></span>
+									<div class="col-sm-10">
+										<label class="checkbox-inline"><input type="checkbox" value="">1회/주</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">2회/주</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">3회/주</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">4회 이상/주</label>
+									</div>
+								</li>
+								<li class="row list-group-item">
+									<span class="col-sm-2 big_category_detail"><strong>등록일</strong></span>
+									<div class="col-sm-10">
+										<label class="checkbox-inline"><input type="checkbox" value="">오늘</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">3일이내</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">5일이내</label>
+										<label class="checkbox-inline"><input type="checkbox" value="">1주일이내</label>
 									</div>
 								</li>
 							</ul>
