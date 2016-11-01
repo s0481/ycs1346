@@ -5,18 +5,8 @@
 
 <title>스터디메이트(StudyMate)-빠른 스터디 매칭을 경험해보세요</title>
 
-<!-- 호환성 보기 문제 해결 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 <link href="assets/css/groupDetail.css" type="text/css" rel="stylesheet" />
 <link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet" /> 
-
-<script src="assets/js/jquery-3.1.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
 </head>
 <body>
