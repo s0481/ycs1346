@@ -284,7 +284,7 @@ body {
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse7"> 자주 묻는 질문 7</a>
 							</h4>
 						</div>
-						<div id="collapse1" class="panel-collapse collapse in">
+						<div id="collapse7" class="panel-collapse collapse in">
 							<div class="panel-body">내용7</div>
 						</div>
 					</div>
@@ -294,7 +294,7 @@ body {
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse8"> 자주 묻는 질문 8</a>
 							</h4>
 						</div>
-						<div id="collapse2" class="panel-collapse collapse">
+						<div id="collapse8" class="panel-collapse collapse">
 							<div class="panel-body">내용8</div>
 						</div>
 					</div>
@@ -304,7 +304,7 @@ body {
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapse9"> 자주 묻는 질문 9</a>
 							</h4>
 						</div>
-						<div id="collapse3" class="panel-collapse collapse">
+						<div id="collapse9" class="panel-collapse collapse">
 							<div class="panel-body">내용9</div>
 						</div>
 					</div>
