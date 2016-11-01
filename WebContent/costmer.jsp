@@ -103,7 +103,7 @@ body {
 	.navbar-wrapper {
 		margin-top: 5px;
 	}
-	.navbar-wrapper .container {
+	.navbar-wrapper .container { 
 		padding-left: 15px;
 		padding-right: 15px;
 	}
