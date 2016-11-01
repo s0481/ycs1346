@@ -6,7 +6,7 @@
 <title>스터디메이트(StudyMate)-빠른 스터디 매칭을 경험해보세요</title>
 
 <link href="assets/css/groupDetail.css" type="text/css" rel="stylesheet" />
-<link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet" /> 
+<link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
 
 </head>
 <body>
