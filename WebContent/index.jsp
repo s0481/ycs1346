@@ -5,6 +5,8 @@
 <html>
 <head>
 	<title>StudyMate :: 맞춤형 스터디 솔루션. 스터디메이트에 오신것을 환영합니다.</title>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
 </head>
 
 <body>
@@ -193,7 +195,7 @@
 		</div>
 		
 		<div class="result_more text-center">
-			<a href="/semi/searchGroup.jsp">+ 더보기</a>
+			<a href="<c:url value="searchGroup.jsp" />">+ 더보기</a>
 		</div>
 		
 	</div>

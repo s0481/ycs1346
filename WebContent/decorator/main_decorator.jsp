@@ -36,7 +36,7 @@
 <![endif]-->
 
 <!-- css link  -->
-	<link href="assets/css/layout.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
 	<decorator:head /> 
 <!-- //css link  -->
 
