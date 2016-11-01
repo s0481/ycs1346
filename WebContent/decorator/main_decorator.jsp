@@ -36,6 +36,8 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/searchGroup.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/groupDetail.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" /> 
 <style type="text/css">
 	/** 메뉴바 배경색 */
 .non_background .navbar-wrapper {
