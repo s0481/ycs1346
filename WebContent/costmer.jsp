@@ -281,7 +281,7 @@ body {
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> 자주 묻는 질문 7</a>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse7"> 자주 묻는 질문 7</a>
 							</h4>
 						</div>
 						<div id="collapse1" class="panel-collapse collapse in">
@@ -291,7 +291,7 @@ body {
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> 자주 묻는 질문 8</a>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse8"> 자주 묻는 질문 8</a>
 							</h4>
 						</div>
 						<div id="collapse2" class="panel-collapse collapse">
@@ -301,7 +301,7 @@ body {
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> 자주 묻는 질문 9</a>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse9"> 자주 묻는 질문 9</a>
 							</h4>
 						</div>
 						<div id="collapse3" class="panel-collapse collapse">
