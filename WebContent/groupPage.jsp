@@ -59,16 +59,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- 그룹페이지 상단 일정스크롤 이상 넘어갈 시 네비게이션 노출시키는 기능 -->
-<!-- 		<div id="sub-nav" class="navbar-container">
-			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<ul class="nav navbar-nav navbar-center">
-					<li><a href="#">그룹정보</a></li>
-					<li><a href="#">회원정보</a></li>
-					<li><a href="#">게시판</a></li>
-				</ul>
-			</div>
-		</div> -->
+
 		<!-- 컨텐츠 컨테이너 -->
 		<div class="contents-container">
 			<ul class="contents-list">
