@@ -37,7 +37,7 @@ a:focus{
 /* main :: carousel
 			 -------------------------------------------------- */
 .carousel {
-	height: 460px;
+	/* height: 460px; */
 }
 
 .carousel-inner>.item>img {
