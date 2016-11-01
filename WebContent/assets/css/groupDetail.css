@@ -247,11 +247,6 @@ ul {
 	margin-right: auto;
 	width: 400px;
 }
-.nav>li {
-	position: relative;
-	display: block;
-	margin-left: 35px;
-}
 .navbar-inverse 
 .navbar-nav>li>a {
 	color: #FFF;
