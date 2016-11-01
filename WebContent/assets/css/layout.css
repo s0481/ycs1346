@@ -14,10 +14,6 @@ img {
 	width:100%;
 	vertical-align:top;
 }
-.costmerimg{
-	width:8%;
-	vertical-align:top;
-}
 a,
 a:hover,
 a:active,
@@ -33,9 +29,6 @@ a:focus{
 }
 .row {
 	margin:0;
-}
-.container {
-	padding:0;
 }
 
 /* main :: carousel
