@@ -81,7 +81,7 @@
 				<!--// 메뉴 영역 -->
 			</div>
 			<!--// 메뉴바 -->
-		</div>
+		</div> 
 		
 		<!-- Modal -->
 		<div id="login_modal" class="modal fade" role="dialog">
