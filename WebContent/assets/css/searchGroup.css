@@ -7,10 +7,6 @@
 .search input {
 	border-radius:0;
 }
-.search input:focus,
-.search input:active {
-	box-shadow:none;
-}
 .search .submit {
 	background-color:#287175;
 	border-color:#287175;
@@ -68,10 +64,9 @@
 .big_category ul{
 	padding:0; margin:0;
 	width:100%;
-	padding-left:0.5%;
 }
 .big_category ul>li {
-	padding:0; margin-right:0.5%;
+	padding:0; margin-right:5px;
 	width:19.5%;
 }
 .big_category ul>li:last-child {
