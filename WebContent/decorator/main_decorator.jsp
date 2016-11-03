@@ -35,10 +35,10 @@
 	<script type="text/javascript" src="assets/js/ie10.js"></script>
 <![endif]-->
 
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/searchGroup.css" />
-=======
+
 <!-- css link  -->
 	<link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
 	<decorator:head /> 
@@ -48,7 +48,7 @@
 <script src="assets/js/jquery-3.1.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 
->>>>>>> branch 'master' of https://github.com/s0481/ycs1346
+<!-- >>>>>>> branch 'master' of https://github.com/s0481/ycs1346 -->
 <style type="text/css">
 	/** 메뉴바 배경색 */
 .non_background .navbar-wrapper {
@@ -86,7 +86,7 @@
 						<li class="active"><a href="<c:url value="/searchGroup.jsp" />">스터디그룹</a></li>
 						<li><a href="<c:url value="/addGroup.jsp" />">그룹등록</a></li>
 						<!-- Trigger the modal with a button -->
-						<li><a href="<c:url value="/" />" data-toggle="modal" data-target="#login_modal">로그인</a></li>
+						<li><a href="<c:url value="#" />" data-toggle="modal" data-target="#login_modal">로그인</a></li>
 						<li><a href="<c:url value="/" />">마이페이지</a></li>
 					</ul>
 					<!--// 메인메뉴 -->
