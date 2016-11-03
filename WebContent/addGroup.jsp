@@ -654,18 +654,18 @@
 
 			<input type="file" id="groupImage">
 			<p class="help-block">모임을 대표할 사진을 선택해주세요.</p>
+			
+			<!-- 모달 실행시킬 버튼 CSS미적용-->
+			<div class="input-header">장소 등록</div>
+				<a href="#" data-toggle="modal" data-target="#inputPlace_modal">
+				<button	class="btn btn-default">장소등록</button></a>
+			
 
 
 			<div class="input-header">모임 소개</div>
 
 			<textarea class="form-control" rows="8"
 				placeholder="나만의 모임을 자유롭게 소개해주세요."></textarea>
-
-
-
-
-
-
 
 
 			<div class="pull-right">
@@ -681,6 +681,52 @@
 
 
 	</div>
+	<!-- Modal -->
+	<div id="inputPlace_modal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-xs">
 
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">장소 등록하기</h4>
+				</div>
+				<div class="modal-body">
+					<!-- 다음 지도 API 시작 -->
+					<div class="map_wrap">
+						<!-- 검색창과 검색버튼 -->
+						<div class="option">
+							<div class="search">
+								<form id="frm">
+									<input type="text" value="강남구 카페" id="keyword"
+										class="keywordInput" size="15">
+									<button type="submit" class="btn btn-default btn-sm">
+										검색
+									</button>
+								</form>
+							</div>
+						</div>
+						<!-- 지도표시 부분 -->
+						<div id="map" style="position: relative; overflow: hidden;"></div>
+						<!-- 검색결과 목록 부분 -->
+						<div id="menu_wrap" class="bg_white">
+							<hr>
+							<ul id="placesList"></ul>
+							<!-- 페이지 번호 -->
+							<div id="pagination"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //Modal -->
+	<script type="text/javascript" src="assets/js/addGroup.js"></script>
+	<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=0a21aad3c63779ac6768c5485927150c&libraries=services"></script>
 </body>
 </html>
