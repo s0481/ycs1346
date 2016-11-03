@@ -82,7 +82,7 @@
 						<li class="active"><a href="<c:url value="/searchGroup.jsp" />">스터디그룹</a></li>
 						<li><a href="<c:url value="/addGroup.jsp" />">그룹등록</a></li>
 						<!-- Trigger the modal with a button -->
-						<li><a href="<c:url value="/" />" data-toggle="modal" data-target="#login_modal">로그인</a></li>
+						<li><a href="<c:url value="#" />" data-toggle="modal" data-target="#login_modal">로그인</a></li>
 						<li><a href="<c:url value="/" />">마이페이지</a></li>
 					</ul>
 					<!--// 메인메뉴 -->
