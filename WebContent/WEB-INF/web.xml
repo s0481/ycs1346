@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>git</display-name>
+  <display-name>semi</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -18,6 +18,19 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  
+  <servlet>
+		<servlet-name>ControllerUsingURI</servlet-name>
+		<servlet-class>controller.ControllerUsingURI</servlet-class>
+		<init-param>
+			<param-name>propertyConfig</param-name>
+			<param-value>/WEB-INF/commandHandlerURI.properties</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerUsingURI</servlet-name> 
+		<url-pattern>*.do</url-pattern> 
+	</servlet-mapping>
   
   <filter>
 		<filter-name>sitemesh</filter-name>
