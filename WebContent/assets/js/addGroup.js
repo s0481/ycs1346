@@ -1,4 +1,39 @@
-		// HTML속성을 모달안에서 실행하기 위한 코드
+//필수입력항목 alert창
+function checkAdd(){
+		var groupinput = eval("document.groupinput"); //문자열을 수식으로 변환(eval()사용)
+		
+		if(!groupinput.groupName.value){
+			alert("모임 이름을 입력하세요.");
+			groupinput.groupName.focus();
+			return false;
+		}
+		if(!groupinput.maxMember.selectedIndex ){
+			alert("모임 인원을 선택하세요.");
+			groupinput.maxMember.focus();
+			return false;
+		} 
+		
+		if(!groupinput.limitDate.selectedIndex){
+			alert("모집 기간을 선택하세요.");
+			groupinput.limitDate.focus();
+			return false;
+		}
+		
+		if(!groupinput.groupGoal.selectedIndex){
+			alert("모임 목표를 선택하세요.");
+			groupinput.groupGoal.focus();
+			return false;
+		}
+	
+		
+		
+		
+		return true;		
+	}
+
+
+
+// HTML속성을 모달안에서 실행하기 위한 코드
 		$('#inputPlace_modal').on('shown.bs.modal', function() {
 					
 			// 모달 실행 시 input창에 커서가 맨 마지막에 위치시키기 위한 코드
