@@ -271,7 +271,7 @@
 
 	</div>
 	<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=0a21aad3c63779ac6768c5485927150c&libraries=services"></script>
-	<script type="text/javascript" src="assets/js/groupPage.js"></script>
+	<script type="text/javascript" src="assets/js/groupPage.js"></script> 
 </body>
 </html>
 
