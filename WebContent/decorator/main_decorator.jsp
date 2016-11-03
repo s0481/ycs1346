@@ -39,10 +39,6 @@
 	<script type="text/javascript" src="assets/js/ie10.js"></script>
 <![endif]-->
 
-<<<<<<< HEAD
-<link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/searchGroup.css" />
-=======
 <!-- css link  -->
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css" />
 <decorator:head />
@@ -52,7 +48,6 @@
 <script src="assets/js/jquery-3.1.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 
->>>>>>> branch 'master' of https://github.com/s0481/ycs1346
 <style type="text/css">
 /** 메뉴바 배경색 */
 .non_background .navbar-wrapper {
@@ -88,12 +83,10 @@
 					<!-- 메인메뉴 -->
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="<c:url value="/" />">Home</a></li>
-						<li class="active"><a
-							href="<c:url value="/searchGroup.jsp" />">스터디그룹</a></li>
+						<li class="active"><a href="<c:url value="/searchGroup.jsp" />">스터디그룹</a></li>
 						<li><a href="<c:url value="/addGroup.jsp" />">그룹등록</a></li>
 						<!-- Trigger the modal with a button -->
-						<li><a href="#" data-toggle="modal"
-							data-target="#login_modal">로그인</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#login_modal">로그인</a></li>
 						<li><a href="<c:url value="/" />">마이페이지</a></li>
 					</ul>
 					<!--// 메인메뉴 -->
@@ -236,33 +229,20 @@
 									</label>
 								</div>
 							</div>
-
-
-
-
-
-
-
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-default"
-								data-dismiss="modal">회원가입</button>
-							<button type="button" class="btn btn-default"
-								data-dismiss="modal">취소</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">회원가입</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
 						</div>
 					</form>
 				</div>
-
 			</div>
 		</div>
-
-
-
+		<!-- //Modal -->
 	</header>
 
 	<!-- 내용영역 -->
 	<decorator:body />
-
 	<!--// 내용영역 -->
 
 	<!-- 푸터 -->
@@ -280,18 +260,15 @@
 						<li><a href="<c:url value="/" />">이용안내</a></li>
 						<li><a href="<c:url value="/" />">개인정보 취급방침</a></li>
 						<!-- Trigger the modal with a button -->
-						<li><a href="#" data-toggle="modal"
-							data-target="#leave_modal">탈퇴하기</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#leave_modal">탈퇴하기</a></li>
 					</ul>
 					<br />
 					<address>
 						<p>
-							<span class="address">주소 : 서울특별시 강남구 역삼동</span><span class="tel">Tel
-								: 1234-5678</span>
+							<span class="address">주소 : 서울특별시 강남구 역삼동</span><span class="tel">Tel : 1234-5678</span>
 						</p>
 						<p>
-							Copyright&copy;2016. <a href="<c:url value="/" />">studymate.co.kr</a>.
-							All rights resurved
+							Copyright&copy;2016. <a href="<c:url value="/" />">studymate.co.kr</a>.All rights resurved
 						</p>
 					</address>
 				</div>
@@ -312,17 +289,13 @@
 					<div class="modal-body text-center">
 						<form id="leave_form" action="" name="leave_form" method="post">
 							<div class="form-group">
-								<input type="password" placeholder="Password"
-									class="form-control">
+								<input type="password" placeholder="Password" class="form-control">
 							</div>
 							<div class="form-group">
-								<input type="password" placeholder="Password 확인"
-									class="form-control">
+								<input type="password" placeholder="Password 확인" class="form-control">
 							</div>
 
-							<p class="row">
-								탈퇴하시면 고객님의 모든 정보가 삭제됩니다.<br />탈퇴하시겠습니까?
-							</p>
+							<p class="row">탈퇴하시면 고객님의 모든 정보가 삭제됩니다.<br />탈퇴하시겠습니까?</p>
 
 							<div class="row modal_leave_btns">
 								<button type="button" class="col-sm-6 btn btn-warning">취소</button>
@@ -341,9 +314,5 @@
 
 	</footer>
 	<!--// 푸터 -->
-
-	<!-- Javascript -->
-	<script src="assets/js/jquery-3.1.1.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
