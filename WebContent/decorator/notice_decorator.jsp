@@ -44,6 +44,7 @@
 <!-- Javascript -->
 <script src="../assets/js/jquery-3.1.1.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 
 <style type="text/css">
 	/** 메뉴바 배경색 */
