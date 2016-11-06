@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<decorators defaultdir="/decorator">
+
+	<excludes>
+		<pattern>/logon/loginPro*</pattern>
+		<pattern>/logon/logout*</pattern>
+		<pattern>/logon/confirmId*</pattern>
+		<pattern>/logon/InputPro*</pattern>
+		
+    </excludes>
+    
+	<decorator name="logon" page="logon_decorator.jsp">
+		<pattern>/logon/*</pattern>
+	</decorator>
+	
+	<decorator name="main" page="main_decorator.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<decorator name="notice" page="notice_decorator.jsp">
+		<pattern>/notice/*</pattern>
+	</decorator>
+	
+</decorators>
