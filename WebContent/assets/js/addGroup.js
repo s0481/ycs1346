@@ -31,6 +31,43 @@ function checkAdd(){
 		return true;		
 	}
 
+//카테고리 selectbox
+function sub_change1() {
+	vn_mnu1 = groupinput.bc.selectedIndex;
+	if (vn_mnu1 == 1) {
+		groupinput.sc.length = 4;
+		groupinput.sc.options[0].text = '토익';
+		groupinput.sc.options[1].text = '오픽';
+		groupinput.sc.options[2].text = '토익스피킹';
+		groupinput.sc.options[3].text = '영어회화';
+	}
+	if (vn_mnu1 == 2) {
+		groupinput.sc.length = 4;
+		groupinput.sc.options[0].text = '일본어';
+		groupinput.sc.options[1].text = '중국어';
+		groupinput.sc.options[2].text = '프랑스어';
+		groupinput.sc.options[3].text = '기타 언어';
+
+	}
+	if (vn_mnu1 == 3) {
+		groupinput.sc.length = 4;
+		groupinput.sc.options[0].text = '인적성';
+		groupinput.sc.options[1].text = '면접';
+		groupinput.sc.options[2].text = '자기소개서';
+		groupinput.sc.options[3].text = '기타';
+
+	}
+	if (vn_mnu1 == 4) {
+		groupinput.sc.length = 3;
+		groupinput.sc.options[0].text = '공무원';
+		groupinput.sc.options[1].text = '국가고시';
+		groupinput.sc.options[2].text = '기타';
+
+	}
+}
+
+
+
 //input file 이미지만 받게하는 코드
 function fileCheck(obj) {
 	var textnode = document.createTextNode("이미지 파일이 아닐경우 등록버튼이 비활성화 됩니다.");
