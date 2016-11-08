@@ -28,7 +28,7 @@ public class LogonDBBean { //DB�� ���õ� ���� �ϴ� Ŭ�
 		try{
 			conn = getConnection();
 //			DriverManager.getConnection(jdbc:apache:commons:dbcp:/pool);
-			pstmt = conn.prepareStatement("insert into members values (?,?,?,?,?,?,?,?,?,?,?,?)");
+			pstmt = conn.prepareStatement("insert into members values (?,?,?,?,?,?,?,?,?,?,?)");
 			pstmt.setString(1, member.getId());
 			pstmt.setString(2, member.getPasswd());
 			pstmt.setString(3, member.getName());
@@ -38,21 +38,9 @@ public class LogonDBBean { //DB�� ���õ� ���� �ϴ� Ŭ�
 			pstmt.setTimestamp(7, member.getRegdate());
 			pstmt.setString(8, member.getEmail());
 			pstmt.setString(9, member.getLocation());
-			pstmt.setString(10, member.getBcategorycode());
-			pstmt.setString(11, member.getScategorycode());
-			pstmt.setString(12, member.getZzimlist());
-			System.out.println(member.getId());
-			System.out.println(member.getPasswd());
-			System.out.println(member.getName());
-			System.out.println(member.getGender());
-			System.out.println(member.getBirthday());
-			System.out.println(member.getTel());
-			System.out.println(member.getRegdate());
-			System.out.println(member.getEmail());
-			System.out.println(member.getLocation());
-			System.out.println(member.getBcategorycode());
-			System.out.println(member.getScategorycode());
-			System.out.println(member.getZzimlist());
+			pstmt.setString(10, member.getScategorycode());
+			pstmt.setString(11, member.getZzimlist());
+	
 			pstmt.executeUpdate();
 		}catch(Exception ex){
 			ex.printStackTrace();
@@ -193,14 +181,14 @@ public class LogonDBBean { //DB�� ���õ� ���� �ϴ� Ŭ�
 		
 		try{
 			conn = getConnection();
-			pstmt = conn.prepareStatement("select passwd from members where id = ?");
+			pstmt = conn.prepareStatement("select passwd from members where id = to_char(?)");
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
 			
 			if(rs.next()){
 				dbpasswd = rs.getString("passwd");
 				if(dbpasswd.equals(passwd)){ //passwd���� �����ͼ� ��
-					pstmt = conn.prepareStatement("delete from members where id=?");
+					pstmt = conn.prepareStatement("delete from members where id= to_char(?)");
 					pstmt.setString(1, id);
 					pstmt.executeUpdate();
 					x = 1; //ȸ��Ż�� ����
@@ -249,7 +237,7 @@ public class LogonDBBean { //DB�� ���õ� ���� �ϴ� Ŭ�
 	} //end zipcodeRead()
 	
 	/* searchIdPro.jsp */
-	public String searchId(String name, String jumin1, String jumin2) throws Exception{
+	public String searchId(String email, String name) throws Exception{
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -258,10 +246,9 @@ public class LogonDBBean { //DB�� ���õ� ���� �ϴ� Ŭ�
 		try{
 			conn = getConnection();
 			
-			pstmt = conn.prepareStatement("select id from members where name=? and jumin1=? and jumin2=?");
-			pstmt.setString(1, name);
-			pstmt.setString(2, jumin1);
-			pstmt.setString(3, jumin2);
+			pstmt = conn.prepareStatement("select id from members where email=? and name=?");
+			pstmt.setString(1, email);
+			pstmt.setString(2, name);
 			rs = pstmt.executeQuery();
 			
 			if(rs.next()){
@@ -280,7 +267,7 @@ public class LogonDBBean { //DB�� ���õ� ���� �ϴ� Ŭ�
 	} //end userCheck()
 	
 	/* changePwPro.jsp */
-	public String changePasswd(String id, String name, String jumin1, String jumin2) throws Exception{
+	public String changePasswd(String id, String email, String name) throws Exception{
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -289,11 +276,10 @@ public class LogonDBBean { //DB�� ���õ� ���� �ϴ� Ŭ�
 		try{
 			conn = getConnection();
 			
-			pstmt = conn.prepareStatement("select passwd from members where id=? and name=? and jumin1=? and jumin2=?");
+			pstmt = conn.prepareStatement("select passwd from members where id=? and email=? and name=?");
 			pstmt.setString(1, id);
-			pstmt.setString(2, name);
-			pstmt.setString(3, jumin1);
-			pstmt.setString(4, jumin2);
+			pstmt.setString(2, email);
+			pstmt.setString(3, name);
 			rs = pstmt.executeQuery();
 			
 			if(rs.next()){

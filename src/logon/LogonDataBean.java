@@ -12,7 +12,6 @@ public class LogonDataBean {
 	private Timestamp regdate;
 	private String email;
 	private String location;
-	private String bcategorycode;
 	private String scategorycode;
 	private String zzimlist;
 	
@@ -72,12 +71,7 @@ public class LogonDataBean {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	public String getBcategorycode() {
-		return bcategorycode;
-	}
-	public void setBcategorycode(String bcategorycode) {
-		this.bcategorycode = bcategorycode;
-	}
+
 	public String getScategorycode() {
 		return scategorycode;
 	}
