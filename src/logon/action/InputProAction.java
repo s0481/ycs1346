@@ -25,10 +25,9 @@ public class InputProAction implements CommandAction {
 		member.setRegdate(new Timestamp(System.currentTimeMillis()));
 		member.setEmail(request.getParameter("email"));
 		member.setLocation(request.getParameter("location"));
-		member.setBcategorycode(request.getParameter("bcategorycode"));
 		member.setScategorycode(request.getParameter("scategorycode"));
 		member.setZzimlist(request.getParameter("zzimlist")); 
-	
+		
 		LogonDBBean dbPro = LogonDBBean.getInstance();
 		dbPro.insertMember(member);
 		

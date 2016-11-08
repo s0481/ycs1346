@@ -1,7 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="logon.LogonDBBean"%>
-<%@ include file="color.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +13,7 @@
 		<div class="row" align="center">
 			
 			<div class="">
-				<h2>${ id }이미사용중인 아이디입니다.</h2>
+				<h2> ${ id } 이미사용중인 아이디입니다.</h2>
 			</div>
 
 		</div>
@@ -37,7 +36,7 @@
 		<div class="row" align="center">
 			<div class="">
 
-				<h2>입력하신 ${ id } 는 사용하실 수 있는 ID입니다.</h2>
+				<h2>입력하신 ${ id } 는  사용하실 수 있는 ID입니다.</h2>
 			</div>
 			<div class="">
 				<input type="button" class="btn btn-default" value="확인"
@@ -47,7 +46,7 @@
 
 		</div>
 	</c:if>
-<script>
+ <script>
 
 function setid() {
 	opener.document.userinput.id.value = "${id}";
@@ -55,6 +54,6 @@ function setid() {
 	self.close();
 }
 
-</script>
+</script> 
 </body>
 </html>

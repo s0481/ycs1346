@@ -2,35 +2,55 @@
 		var userinput = eval("document.userinput"); //문자열을 수식으로 변환(eval()사용)
 		if (!userinput.id.value) {
 			alert("ID를 입력하세요.");
+			userinput.id.focus();
 			return false;
 		}
 		if (userinput.checkId.value != "y") {
 			alert("ID를 체크하세요.");
 			return false;
 		}
-		if (!document.checkForm.recheckId.value) {
-			alert("ID를 입력하세요.");
-			return false;
-		}
-		
-
+	
 		if (!userinput.passwd.value) {
 			alert("비밀번호를 입력하세요.");
+			userinput.passwd.focus();
 			return false;
 		}
 		if (userinput.passwd.value != userinput.passwd2.value) {
 			alert("비밀번호를 동일하게 입력하세요.");
+			userinput.passwd2.focus();
 			return false;
 		}
 
 		if (!userinput.name.value) {
 			alert("사용자 이름을 입력하세요.");
+			userinput.name.focus();
 			return false;
 		}
+		
+		if (!userinput.gender.value) {
+			alert("성별을 체크하세요.");
+			return false;
+		}
+		if (!userinput.dateInput.value) {
+			alert("생년월일을 입력하세요.");
+			userinput.dateInput.focus();
+			return false;
+		}
+		if (!userinput.tel.value) {
+			alert("전화번호를 입력하세요.");
+			userinput.tel.focus();
+			return false;
+		}
+		
+		
 
 		return true;
 	} //end checkIt()
 
+
+
+
+	
 	/* 아이디 중복 여부 판단 */
 	function openConfirmid(userinput) {
 		//아이디 입력했는지 검사
@@ -40,7 +60,7 @@
 		}
 
 		//url과 사용자 입력 id 조합
-		url = "/studymate/logon/confirmId.do?id=" + userinput.id.value
+		url = "/semi/logon/confirmId.do?id=" + userinput.id.value
 				+ "&checkId=" + userinput.checkId.value;
 		//새로운 창 열기
 		open(
@@ -50,11 +70,12 @@
 	} //end openConfirmid()
 
 	function zipCheck() {
-		url = "/studymate/logon/zipCheck.do?check=y"; //처음 실행 시 넘어간 값이 없는 없는데 자동 검색되버리면 nullPointerException 발생하므로 처음실행이라는 상태값 'check'를 넘겨준다.
+		url = "/semi/logon/zipCheck.do?check=y"; //처음 실행 시 넘어간 값이 없는 없는데 자동 검색되버리면 nullPointerException 발생하므로 처음실행이라는 상태값 'check'를 넘겨준다.
 		window
 				.open(
 						url,
 						"post",
 						"toolbar=no, width=500, height=300, directories=no, status=yes, scrollbars=yes, menubar=no");
 	} //end zipCheck()
+	
 	

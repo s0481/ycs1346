@@ -108,9 +108,11 @@
 						<h4 class="modal-title">로그인</h4>
 					</div>
 					<div class="modal-body text-center">
-						<form id="login_form" action="/semi/logon/loginPro.do" name="login_form" method="post">
+						<form id="login_form" action="../logon/loginPro.do" name="login_form" method="post">
 							<div class="form-group">
-								<input name="id" type="text" placeholder="ID" class="form-control idForm">
+								<input name="id" type="text" placeholder="ID" class="form-control idForm" autofocus>
+								<% String url = String.valueOf(request.getRequestURL());%>
+								<input type="hidden" id="url" name="url" value="<%=url %>">
 							</div>
 							<div class="form-group">
 								<input name="passwd" type="password" placeholder="Password"
@@ -118,11 +120,11 @@
 							</div>
 							<div class="row modal_login_btns">
 								<button type="submit" class="col-sm-6 btn btn-default">로그인</button>
-								<a class="btn btn-default" href="<c:url value="/semi/logon/inputForm.do" />">회원가입</a>
+								<a class="btn btn-default" href="<c:url value="../logon/inputForm.do" />">회원가입</a>
 							</div>
 							<div class="row modal_login_btns">
-								<button type="button" class="col-sm-6 btn btn-default">ID찾기</button>
-								<button type="button" class="col-sm-6 btn btn-default">Password찾기</button>
+								<button type="button" class="col-sm-6 btn btn-default" onclick="javascript:window.location='./logon/searchIdForm.do'">ID찾기</button>
+								<button type="button" class="col-sm-6 btn btn-default" onclick="javascript:window.location='./logon/changePwForm.do'">Password찾기</button>
 							</div>
 						</form>
 					</div>
@@ -131,114 +133,11 @@
 					</div>
 				</div>
 
+
 			</div>
 		</div>
 		<!-- //Modal -->
-		<!-- Modal -->
-		<div class="modal fade" id="myModal2" role="dialog">
-			<div class="modal-dialog">
-
-				<!-- Modal content-->
-				<div class="modal-content">
-					<form id="Join-Form">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							
-							<h4 class="modal-title">회원가입</h4>
-						</div>
-						<div class="modal-body Loginbody">
-							<div class="row loginform">
-								<input type="text" name="id" class="form-control col-xs-9" name="userId"
-									placeholder="아이디를입력하세요">
-								<button type="button" class="btn btn-default col-xs-2">중복확인</button>
-							</div>
-							<input type="password" name="passwd" class="form-control" name="userPw"
-								placeholder="비밀번호를입력하세요"> <input type="password"
-								class="form-control" name="userPw2" placeholder="비밀번호를확인하세요">
-
-							<div class="row">
-								<label class="control-label col-xs-2" for="성별">성별</label>
-								<div class="col-xs-10"> <label
-									class="checkbox-inline"> <input id="inlineCheckbox10"
-									type="radio" name="gender" value="0"> <span
-									class="fa fa-check"></span>남자
-								</label> <label class="checkbox-inline"> <input
-									id="inlineCheckbox10" type="radio" name="gender" value="1">
-									<span class="fa fa-check"></span>여자
-								</label></div>
-
-							</div>
-							<input type="text" class="form-control" name="생년월일"
-								placeholder="생년월일 : ex)20161101" maxlength="8"> <input
-								type="text" class="form-control" name="이름" placeholder="사용자 이름"
-								maxlength="8"> <input type="text" class="form-control"
-								name="전화번호" placeholder="전화번호: ex)01012345678" maxlength="11">
-							<input type="text" class="form-control" name="이메일"
-								placeholder="Email을 입력해주세요">
-
-							<div class="row">
-								<label class="control-label col-xs-2" for="영어">영어</label>
-								<div class="col-xs-10">
-									<label class="checkbox-inline"><input type="checkbox"
-										value="토익">토익 </label> <label class="checkbox-inline">
-										<input type="checkbox" value="오픽">오픽
-									</label> <label class="checkbox-inline"> <input type="checkbox"
-										value="토익스피킹">토익스피킹
-									</label> <label class="checkbox-inline"> <input type="checkbox"
-										value="회화">회화
-
-									</label>
-								</div>
-							</div>
-
-							<div class="row">
-								<label class="control-label col-xs-2" for="외국어">외국어</label>
-								<div class="col-xs-10">
-									<label class="checkbox-inline"> <input type="checkbox"
-										value="일본어">일본어
-									</label><label class="checkbox-inline"> <input type="checkbox"
-										value="중국어">중국어
-									</label><label class="checkbox-inline"> <input type="checkbox"
-										value="프랑스어">프랑스어
-									</label>
-								</div>
-							</div>
-							<div class="row">
-								<label class="control-label col-xs-2" for="취업">취업</label>
-								<div class="col-xs-10">
-									<label class="checkbox-inline"> <input type="checkbox"
-										value="인적성">인적성
-									</label><label class="checkbox-inline"> <input type="checkbox"
-										value="면접">면접
-									</label><label class="checkbox-inline"> <input type="checkbox"
-										value="자소서">자소서
-									</label><label class="checkbox-inline"> <input type="checkbox"
-										value="기타">기타
-									</label>
-								</div>
-							</div>
-							<div class="row">
-								<label class="control-label col-xs-2" for="국가고시/공무원">국가고시/공무원</label>
-								<div class="col-xs-10">
-									<label class="checkbox-inline"> <input type="checkbox"
-										value="공무원">공무원
-									</label><label class="checkbox-inline"> <input type="checkbox"
-										value="국가고시">국가고시
-									</label><label class="checkbox-inline"> <input type="checkbox"
-										value="기타">기타
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">회원가입</button>
-							<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!-- //Modal -->
+		
 	</header>
 
 	<!-- 내용영역 -->
@@ -305,7 +204,7 @@
 						<li class="active"><a href="<c:url value="/searchGroup.jsp" />">스터디그룹</a></li>
 						<li><a href="<c:url value="/addGroup.jsp" />">그룹등록</a></li>
 						<!-- Trigger the modal with a button -->
-						<li><a href="/semi/logon/logout.do" >로그아웃</a></li>
+						<li><a href="../logon/logout.do" >로그아웃</a></li>
 						<li><a href="<c:url value="/" />">마이페이지</a></li>
 					</ul>
 					<!--// 메인메뉴 -->
@@ -363,9 +262,9 @@
 						<h4 class="modal-title">탈퇴하기</h4>
 					</div>
 					<div class="modal-body text-center">
-						<form id="leave_form" action="" name="leave_form" method="post">
+						<form id="leave_form" action="../logon/deletePro.do" name="leave_form" method="post">
 							<div class="form-group">
-								<input type="password" placeholder="Password" class="form-control">
+								<input type="password" placeholder="Password" class="form-control" autofocus>
 							</div>
 							<div class="form-group">
 								<input type="password" placeholder="Password 확인" class="form-control">
@@ -374,7 +273,7 @@
 							<p class="row">탈퇴하시면 고객님의 모든 정보가 삭제됩니다.<br />탈퇴하시겠습니까?</p>
 
 							<div class="row modal_leave_btns">
-								<button type="button" class="col-sm-6 btn btn-warning">취소</button>
+								<button type="button" class="col-sm-6 btn btn-warning" data-dismiss="modal">취소</button>
 								<button type="submit" class="col-sm-6 btn btn-danger">확인</button>
 							</div>
 						</form>

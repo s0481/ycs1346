@@ -21,7 +21,6 @@
 <body class="non_background">
 
   
-	<h4 class="">회원가입</h4>
 	<form id="Join-Form" method="post"
 		action="/semi/logon/inputPro.do" name="userinput" onSubmit="return checkIt()">
 
@@ -31,15 +30,15 @@
 			<div class="row loginform">
 			<div class="formTitle"><span style="color:red">* </span>아이디</div> 
 				<input type="text" class="form-control col-xs-9 formform marginForm" id="id" name="id"
-					placeholder="아이디를입력하세요"> 
+					placeholder="아이디를입력하세요" autofocus> 
 				<input type="button"
 					name="confirm_id" class="btn btn-default formform" value="ID중복확인"
 					OnClick="openConfirmid(this.form)" />
 			</div>
 			
 			<div class="formTitle"><span style="color:red">* </span>비밀번호</div>
-			<input type="password" class="form-control formform" name="passwd" placeholder="비밀번호를 입력하세요"> 
-			<input type="password" class="form-control formform marginForm" name="userPw2" placeholder="비밀번호를 확인하세요">
+			<input type="password" class="form-control formform " id="passwd" name="passwd" placeholder="비밀번호를 입력하세요"> 
+			<input type="password" class="form-control formform marginForm " id="passwd2" name="passwd2" placeholder="비밀번호를 확인하세요">
 			<!--  이름 입력 -->
 			<div class="formTitle"><span style="color:red">* </span>이름</div>
 			<input type="text" class="form-control formform marginForm" name="name" placeholder="이름을 입력하세요"	maxlength="8">
@@ -77,7 +76,7 @@
 			<div class="row categoryFrm">
 				<label class="control-label col-xs-2" for="영어">영어</label>
 				<div class="col-xs-10">
-					<label class="checkbox-inline"><input type="checkbox" name="bcategorycode"
+					<label class="checkbox-inline"><input type="checkbox" 
 						value="토익">토익 </label> <label class="checkbox-inline"> <input
 						type="checkbox" value="오픽">오픽
 					</label> <label class="checkbox-inline"> <input type="checkbox"

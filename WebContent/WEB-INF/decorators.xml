@@ -6,16 +6,23 @@
 		<pattern>/logon/loginPro*</pattern>
 		<pattern>/logon/logout*</pattern>
 		<pattern>/logon/confirmId*</pattern>
-		<pattern>/logon/InputPro*</pattern>
+		<pattern>/logon/inputPro*</pattern>
+		<pattern>/logon/searchId.do*</pattern>
+		<pattern>/logon/changePwPro.do*</pattern>
+		<pattern>/logon/deletePro.do*</pattern>
+		
+		
 		
     </excludes>
     
 	<decorator name="logon" page="logon_decorator.jsp">
 		<pattern>/logon/*</pattern>
+		
 	</decorator>
 	
 	<decorator name="main" page="main_decorator.jsp">
 		<pattern>/*</pattern>
+		
 	</decorator>
 	
 	<decorator name="notice" page="notice_decorator.jsp">
