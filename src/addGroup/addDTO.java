@@ -23,7 +23,7 @@ public class addDTO {
  private String content;
 
  // 등록시간 
- private Date createDate;
+ private Timestamp createDate;
 
  // 찜횟수 
  private int zzimCount;
@@ -35,7 +35,7 @@ public class addDTO {
  private int nowMember;
 
  // 모집기간 
- private Date limitDate;
+ private String limitDate;
 
  // 모임요일
  private String possibleDay;
@@ -108,11 +108,13 @@ public void setContent(String content) {
 	this.content = content;
 }
 
-public Date getCreateDate() {
+
+
+public Timestamp getCreateDate() {
 	return createDate;
 }
 
-public void setCreateDate(Date createDate) {
+public void setCreateDate(Timestamp createDate) {
 	this.createDate = createDate;
 }
 
@@ -140,14 +142,15 @@ public void setNowMember(int nowMember) {
 	this.nowMember = nowMember;
 }
 
-public Date getLimitDate() {
+
+
+public String getLimitDate() {
 	return limitDate;
 }
 
-public void setLimitDate(Date limitDate) {
+public void setLimitDate(String limitDate) {
 	this.limitDate = limitDate;
 }
-
 
 public String getLocation() {
 	return location;
