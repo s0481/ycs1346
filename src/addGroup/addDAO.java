@@ -36,12 +36,7 @@ public class addDAO {
 
 		try {
 			conn = getConnection();
-			
-			 pstmt = conn.prepareStatement("select max(groupNum) from GroupInfo");
-			    rs = pstmt.executeQuery();
-
-			   
-
+	
 			// 14
 			sql = "insert into groupInfo(groupName,maxMember,money,limitDate,possibleDay,tel,bc,sc";
 			sql += "groupGoal,target,groupImage,location,introduce,createDate) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
@@ -67,11 +62,6 @@ public class addDAO {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		} finally {
-			if (rs != null)
-				try {
-					rs.close();
-				} catch (SQLException ex) {
-				}
 			if (pstmt != null)
 				try {
 					pstmt.close();
