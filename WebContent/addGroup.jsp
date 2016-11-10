@@ -145,32 +145,32 @@
 
 
 					<label class="dayLabel" for="mon"> <input type="checkbox"
-						name="possibleTime" id="mon" value="">월
+						name="meetingCount" id="mon" value="mon">월
 					</label>
 
 
 					<label class="dayLabel" for="tue"> <input type="checkbox"
-						name="possibleTime" id="tue" value="">화
+						name="meetingCount" id="tue" value="tue">화
 					</label>
 
 					<label class="dayLabel" for="wed"> <input type="checkbox"
-						name="possibleTime" id="wed" value="">수
+						name="meetingCount" id="wed" value="wed">수
 					</label>
 
 					<label class="dayLabel" for="thu"> <input type="checkbox"
-						name="possibleTime" id="thu" value="">목
+						name="meetingCount" id="thu" value="thu">목
 					</label>
 
 					<label class="dayLabel" for="fri"> <input type="checkbox"
-						name="possibleTime" id="fri" value="">금
+						name="meetingCount" id="fri" value="fri">금
 					</label>
 
 					<label class="dayLabel" for="sat"> <input type="checkbox"
-						name="possibleTime" id="sat" value="">토
+						name="meetingCount" id="sat" value="sat">토
 					</label>
 
 					<label class="dayLabel" for="sun"> <input type="checkbox"
-						name="possibleTime" id="sun" value="">일
+						name="possibleDay" id="sun" value="sun">일
 					</label>
 
 
@@ -186,7 +186,7 @@
 						<span style="color: red">* </span>모임 카테고리
 					</div>
 
-					<select name="bc" onChange="sub_change1()" class="form-control">
+					<select name="bcategorycode" onChange="sub_change1()" class="form-control">
 						<option selected>대분류</option>
 
 						<option value="1">영어</option>
@@ -198,7 +198,7 @@
 						<option value="4">공무원/국가고시</option>
 
 					</select>
-					<select name="sc" onChange="sub_change2()" class="form-control">
+					<select name="scategorycode" onChange="sub_change2()" class="form-control">
 						<option value=" " selected>소분류</option>
 					</select>
 
@@ -210,13 +210,13 @@
 					<select class="form-control" id="groupGoal" name="groupGoal">
 						<option selected disabled>선택없음</option>
 
-						<option value="LG00">자기개발</option>
+						<option value="자기개발">자기개발</option>
 
-						<option value="LG01">업무스킬UP</option>
+						<option value="업무스킬UP">업무스킬UP</option>
 
-						<option value="LG02">자격증준비</option>
+						<option value="자격증준비">자격증준비</option>
 
-						<option value="LG03">기타</option>
+						<option value="기타">기타</option>
 
 					</select>
 
@@ -224,16 +224,16 @@
 					<div class="input-header">모집 대상</div>
 
 					<label class="checkbox-inline"> <input type="checkbox"
-						id="inlineCheckbox1" name="target" value="option1">대학생
+						id="inlineCheckbox1" name="target" value="대학생">대학생
 					</label>
 					<label class="checkbox-inline"> <input type="checkbox"
-						id="inlineCheckbox2" name="target" value="option2">취업준비생
+						id="inlineCheckbox2" name="target" value="취업준비생">취업준비생
 					</label>
 					<label class="checkbox-inline"> <input type="checkbox"
-						id="inlineCheckbox3" name="target" value="option3">직장인
+						id="inlineCheckbox3" name="target" value="직장인">직장인
 					</label>
 					<label class="checkbox-inline"> <input type="checkbox"
-						id="inlineCheckbox4" name="target" value="option4">일반인
+						id="inlineCheckbox4" name="target" value="일반인">일반인
 					</label>
 
 
