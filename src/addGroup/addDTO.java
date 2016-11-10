@@ -227,9 +227,8 @@ public String getPossibleDay() {
 public void setPossibleDay(String possibleDay) {
 	this.possibleDay = possibleDay;
 }
-
+}
 
 
 
  
-}
