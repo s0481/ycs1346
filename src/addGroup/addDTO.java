@@ -4,66 +4,66 @@ import java.util.Date;
 import java.sql.Timestamp;
 
 
-//½ºÅÍµð ¸ðÀÓ Á¤º¸ 
+//ï¿½ï¿½ï¿½Íµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 public class addDTO {
 
- // ½ºÅÍµð ¸ðÀÓ ¹øÈ£ 
+ // ï¿½ï¿½ï¿½Íµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ 
  private int groupNum;
 
- // ±×·ìÀå 
+ // ï¿½×·ï¿½ï¿½ï¿½ 
  private String id;
 
- // ¸ðÀÓ¸í 
+ // ï¿½ï¿½ï¿½Ó¸ï¿½ 
  private String groupName;
 
- // ÀÌ¹ÌÁö °æ·Î ·¹ÄÚµå »ý¼º ½Ã ±âº»ÀÌ¹ÌÁö °æ·Î ÁöÁ¤
+ // ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½âº»ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  private String groupImage;
 
- // ³»¿ë 
+ // ï¿½ï¿½ï¿½ï¿½ 
  private String content;
 
- // µî·Ï½Ã°£ 
+ // ï¿½ï¿½Ï½Ã°ï¿½ 
  private Timestamp createDate;
 
- // ÂòÈ½¼ö 
+ // ï¿½ï¿½È½ï¿½ï¿½ 
  private int zzimCount;
 
- // ¸ðÀÓÀÎ¿ø 
+ // ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ 
  private int maxMember;
 
- // ÇöÀçÀÎ¿ø default 1
+ // ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ default 1
  private int nowMember;
 
- // ¸ðÁý±â°£ 
+ // ï¿½ï¿½ï¿½ï¿½ï¿½â°£ 
  private String limitDate;
 
- // ¸ðÀÓ¿äÀÏ
+ // ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½
  private String possibleDay;
 
- // Àå¼Ò 
+ // ï¿½ï¿½ï¿½ 
  private String location;
 
- // ´ëÇ¥¿¬¶ôÃ³ 
+ // ï¿½ï¿½Ç¥ï¿½ï¿½ï¿½ï¿½Ã³ 
  private String tel;
 
- // ¸ðÀÓ¼Ò°³ 
+ // ï¿½ï¿½ï¿½Ó¼Ò°ï¿½ 
  private String introduce;
 
- // Ä«Å×°í¸®ÄÚµå(´ë) 
+ // Ä«ï¿½×°ï¿½ï¿½Úµï¿½(ï¿½ï¿½) 
  private String bc;
 
- // Ä«Å×°í¸®ÄÚµå(¼Ò) 
+ // Ä«ï¿½×°ï¿½ï¿½Úµï¿½(ï¿½ï¿½) 
  private String sc;
 
- // È¸ºñ 
+ // È¸ï¿½ï¿½ 
  private String money;
 
 
 
- // ¸ðÀÓ¸ñÇ¥ 
+ // ï¿½ï¿½ï¿½Ó¸ï¿½Ç¥ 
  private String groupGoal;
 
- // ¸ðÁý´ë»ó 
+ // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
  private String target;
 
  
